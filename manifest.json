@@ -1,0 +1,12 @@
+{
+  "name": "YouTube Music Lyrics Select",
+  "description": "re-enable text selection and copying for lyrics on music.youtube.com",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [{
+    "matches": ["https://music.youtube.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }],
+  "action": { "default_title": "Lyrics Select" }
+}
